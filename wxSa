@@ -1,0 +1,25 @@
+var count = 0;
+var param={
+  data: {
+    clickMsg: '显示点击的内容'
+  },
+  clickMe1:function(e){
+    console.log(e)
+    count++;
+    Id = e.currentTarget.id;
+    param.data.clickMsg = '显示内容' + 'view0' + '点击次数' +count+Id;
+    console.log(currentTarget)
+    this.setData(param.data)
+  }
+}
+Page(param)
+// Page({
+//   data: {
+//     name:'李蓓'
+//   },
+//   changeName:function(e){
+//     this.setData({
+//       name:'彭于晏'
+//     })
+//   }
+// })
